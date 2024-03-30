@@ -5,7 +5,7 @@ from .models import Xe, Nhan_vien
 class XeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Xe
-        fields = ('id','time', 'ten')
+        fields = ('id','time', 'ten','bien_so')
 
 class Nhan_vienSerializer(serializers.ModelSerializer):
    class  Meta:
