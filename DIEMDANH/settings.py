@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -77,23 +79,23 @@ WSGI_APPLICATION = 'DIEMDANH.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "postgres",
-        'USER':"postgres.pjltdwvkisgtcafmpbrw",
-        'PASSWORD':"4B7Zryu9bONLmQnW",
-        'HOST':"aws-0-ap-southeast-1.pooler.supabase.com",
-        'POST':"5432",
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': "postgres",
+#         'USER':"postgres.pjltdwvkisgtcafmpbrw",
+#         'PASSWORD':"4B7Zryu9bONLmQnW",
+#         'HOST':"aws-0-ap-southeast-1.pooler.supabase.com",
+#         'POST':"5432",
+#     }
+# }
 
 
 # Password validation
