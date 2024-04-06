@@ -1,7 +1,7 @@
 from django.urls import path
 from rest_framework import routers
 from django.conf.urls import include
-from.views import XeViewSet, Nhan_vienViewSet
+from.views import XeViewSet, Nhan_vienViewSet, Nhan_vien_xeViewSet
 
 from django.urls import re_path
 from rest_framework import permissions
@@ -24,6 +24,7 @@ schema_view = get_schema_view(
 router = routers.DefaultRouter()
 router.register('xe', XeViewSet)
 router.register('nhanvien', Nhan_vienViewSet)
+router.register('nhanvienxe', Nhan_vien_xeViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
