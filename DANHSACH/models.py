@@ -21,5 +21,5 @@ class Nhan_vien_xe(models.Model):
     ten_nhan_vien = models.CharField(max_length=250)
     xe = models.ForeignKey(Xe, on_delete = models.CASCADE)
 
-class Cap_nhat(models.Model):
+class Capnhat(models.Model):
     trang_thai = models.BooleanField(default=False)
