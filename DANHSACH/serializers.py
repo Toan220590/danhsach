@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Xe, Nhan_vien, Nhan_vien_xe
+from .models import Xe, Nhan_vien, Nhan_vien_xe, Cap_nhat
 
 class XeSerializer(serializers.ModelSerializer):
     class Meta:
@@ -16,3 +16,8 @@ class Nhan_vien_xeSerializer(serializers.ModelSerializer):
    class  Meta:
         model = Nhan_vien_xe
         fields = ('ngay_tao', 'seri', 'ten_nhan_vien', 'xe')
+
+class Cap_nhatSerializer(serializers.ModelSerializer):
+   class  Meta:
+        model = Cap_nhat
+        fields = ('id', 'trang_thai')

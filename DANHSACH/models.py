@@ -20,3 +20,6 @@ class Nhan_vien_xe(models.Model):
     seri = models.CharField(max_length=250,primary_key=True)
     ten_nhan_vien = models.CharField(max_length=250)
     xe = models.ForeignKey(Xe, on_delete = models.CASCADE)
+
+class Cap_nhat(models.Model):
+    trang_thai = models.BooleanField(default=False)
