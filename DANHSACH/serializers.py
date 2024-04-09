@@ -15,7 +15,7 @@ class Nhan_vienSerializer(serializers.ModelSerializer):
 class Nhan_vien_xeSerializer(serializers.ModelSerializer):
    class  Meta:
         model = Nhan_vien_xe
-        fields = ('ngay_tao', 'seri', 'ten_nhan_vien', 'xe')
+        fields = ('id','ngay_tao', 'seri', 'ten_nhan_vien', 'xe')
 
 class CapnhatSerializer(serializers.ModelSerializer):
    class  Meta:

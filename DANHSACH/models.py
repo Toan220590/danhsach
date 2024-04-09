@@ -17,7 +17,7 @@ class Nhan_vien(models.Model):
 
 class Nhan_vien_xe(models.Model):
     ngay_tao = models.DateTimeField(auto_now_add = True)
-    seri = models.CharField(max_length=250,primary_key=True)
+    seri = models.CharField(max_length=250)
     ten_nhan_vien = models.CharField(max_length=250)
     xe = models.ForeignKey(Xe, on_delete = models.CASCADE)
 
