@@ -4,8 +4,8 @@ from rest_framework.response import Response
 from rest_framework import viewsets
 
 
-from .models import Xe, Nhan_vien, Nhan_vien_xe, Capnhat
-from .serializers import XeSerializer, Nhan_vienSerializer, Nhan_vien_xeSerializer, CapnhatSerializer
+from .models import Xe, Nhan_vien, Nhan_vien_xe, Capnhat, So_dien_thoai_gui, So_dien_thoai_nhan, Tin_nhan
+from .serializers import XeSerializer, Nhan_vienSerializer, Nhan_vien_xeSerializer, CapnhatSerializer, So_dien_thoai_guiSerializer, So_dien_thoai_nhanSerializer, Tin_nhanSerializer
 
 # Create your views here.
 
@@ -31,3 +31,15 @@ class Nhan_vien_xeViewSet(viewsets.ModelViewSet):
 class CapnhatViewSet(viewsets.ModelViewSet):
     queryset = Capnhat.objects.all()
     serializer_class = CapnhatSerializer
+
+class So_dien_thoai_guiViewSet(viewsets.ModelViewSet):
+    queryset = So_dien_thoai_gui.objects.all()
+    serializer_class = So_dien_thoai_guiSerializer
+
+class So_dien_thoai_nhanViewSet(viewsets.ModelViewSet):
+    queryset = So_dien_thoai_nhan.objects.all()
+    serializer_class = So_dien_thoai_nhanSerializer
+
+class Tin_nhanViewSet(viewsets.ModelViewSet):
+    queryset = Tin_nhan.objects.all()
+    serializer_class = Tin_nhanSerializer

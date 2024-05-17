@@ -23,3 +23,13 @@ class Nhan_vien_xe(models.Model):
 
 class Capnhat(models.Model):
     trang_thai = models.BooleanField(default=False)
+
+class So_dien_thoai_gui(models.Model):
+    sdtg = models.CharField(max_length=250)
+
+class So_dien_thoai_nhan(models.Model):
+    sdtn = models.CharField(max_length=250)
+
+class Tin_nhan(models.Model):
+    ngay_tao = models.DateTimeField(auto_now_add = True)
+    tin_nhan = models.CharField(max_length=1000)
