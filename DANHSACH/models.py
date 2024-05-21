@@ -33,3 +33,9 @@ class So_dien_thoai_nhan(models.Model):
 class Tin_nhan(models.Model):
     ngay_tao = models.DateTimeField(auto_now_add = True)
     tin_nhan = models.CharField(max_length=1000)
+
+class Muc_nuoc(models.Model):
+    ngay_tao = models.DateTimeField(auto_now_add = True)
+    dien_ap = models.FloatField(default = 0)
+    nhiet_do = models.FloatField(default = 0)
+    muc_nuoc = models.FloatField(default = 0)
