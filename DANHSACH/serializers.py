@@ -45,4 +45,4 @@ class Muc_nuocSerializer(serializers.ModelSerializer):
 class ThoigianSerializer(serializers.ModelSerializer):
    class  Meta:
         model = Thoi_gian
-        fields = ('id', 'trang_thai')
+        fields = ('id','ngay_tao', 'trang_thai')
