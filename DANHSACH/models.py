@@ -35,7 +35,10 @@ class Tin_nhan(models.Model):
     tin_nhan = models.CharField(max_length=1000)
 
 class Muc_nuoc(models.Model):
+    MaTram=models.FloatField(default=0)
+    Ngay = models.CharField(max_length=255)
+    GiaTri = models.FloatField(default = 0)
+
+class Thoi_gian(models.Model):
     ngay_tao = models.DateTimeField(auto_now_add = True)
-    dien_ap = models.FloatField(default = 0)
-    nhiet_do = models.FloatField(default = 0)
-    muc_nuoc = models.FloatField(default = 0)
+    trang_thai = models.BooleanField(default=False)
