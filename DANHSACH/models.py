@@ -35,7 +35,7 @@ class Tin_nhan(models.Model):
     tin_nhan = models.CharField(max_length=1000)
 
 class Muc_nuoc(models.Model):
-    MaTram=models.FloatField(default=0)
+    MaTram=models.IntegerField(default=0)
     Ngay = models.CharField(max_length=255)
     GiaTri = models.FloatField(default = 0)
 
