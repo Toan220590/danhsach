@@ -23,6 +23,9 @@ class Nhan_vien_xe(models.Model):
 
 class Capnhat(models.Model):
     trang_thai = models.BooleanField(default=False)
+    trang_thai_sdtg = models.BooleanField(default=False)
+    trang_thai_sdtn = models.BooleanField(default=False)
+    trang_thai_tn = models.BooleanField(default=False)
 
 class So_dien_thoai_gui(models.Model):
     sdtg = models.CharField(max_length=250)

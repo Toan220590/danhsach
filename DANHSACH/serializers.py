@@ -20,7 +20,7 @@ class Nhan_vien_xeSerializer(serializers.ModelSerializer):
 class CapnhatSerializer(serializers.ModelSerializer):
    class  Meta:
         model = Capnhat
-        fields = ('id', 'trang_thai')
+        fields = ('id', 'trang_thai','trang_thai_sdtg', 'trang_thai_sdtn','trang_thai_tn')
 
 class So_dien_thoai_guiSerializer(serializers.ModelSerializer):
    class  Meta:
