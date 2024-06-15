@@ -30,7 +30,7 @@ class So_dien_thoai_guiSerializer(serializers.ModelSerializer):
 class So_dien_thoai_nhanSerializer(serializers.ModelSerializer):
    class  Meta:
         model = So_dien_thoai_nhan
-        fields = ('id', 'sdtn')
+        fields = ('id', 'sdtn','trang_thai_nhan_tn','loi_sim')
 
 class Tin_nhanSerializer(serializers.ModelSerializer):
    class  Meta:

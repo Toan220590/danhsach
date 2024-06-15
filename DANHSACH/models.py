@@ -37,6 +37,8 @@ class So_dien_thoai_gui(models.Model):
 
 class So_dien_thoai_nhan(models.Model):
     sdtn = models.CharField(max_length=250)
+    trang_thai_nhan_tn = models.BooleanField(default=False)
+    loi_sim = models.BooleanField(default=False)
 
 class Tin_nhan(models.Model):
     ngay_tao = models.DateTimeField(auto_now_add = True)
