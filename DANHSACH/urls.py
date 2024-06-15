@@ -1,7 +1,7 @@
 from django.urls import path
 from rest_framework import routers
 from django.conf.urls import include
-from.views import XeViewSet, Nhan_vienViewSet, Nhan_vien_xeViewSet, CapnhatViewSet, So_dien_thoai_guiViewSet, So_dien_thoai_nhanViewSet, Tin_nhanViewSet, Muc_nuocViewSet,ThoigianViewSet
+from.views import XeViewSet, Nhan_vienViewSet, Nhan_vien_xeViewSet, CapnhatViewSet, So_dien_thoai_guiViewSet, So_dien_thoai_nhanViewSet, Tin_nhanViewSet, Muc_nuocViewSet,ThoigianViewSet, CanhbaoViewSet
 
 from django.urls import re_path
 from rest_framework import permissions
@@ -31,6 +31,7 @@ router.register('sdtn', So_dien_thoai_nhanViewSet)
 router.register('tn', Tin_nhanViewSet)
 router.register('mucnuoc', Muc_nuocViewSet)
 router.register('thoigian',ThoigianViewSet )
+router.register('canhbao',CanhbaoViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

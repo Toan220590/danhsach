@@ -27,6 +27,10 @@ class Capnhat(models.Model):
     trang_thai_sdtn = models.BooleanField(default=False)
     trang_thai_tn = models.BooleanField(default=False)
 
+class CanhBao(models.Model):
+    ket_noi_usb= models.BooleanField(default=False)
+    khong_gui_tn = models.BooleanField(default=False)
+
 
 class So_dien_thoai_gui(models.Model):
     sdtg = models.CharField(max_length=250)
@@ -36,6 +40,7 @@ class So_dien_thoai_nhan(models.Model):
 
 class Tin_nhan(models.Model):
     ngay_tao = models.DateTimeField(auto_now_add = True)
+    ma_tn= models.CharField(max_length=1000)
     tin_nhan = models.CharField(max_length=1000)
 
 class Muc_nuoc(models.Model):
